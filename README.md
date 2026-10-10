@@ -91,7 +91,7 @@ No login is required in the current prototype.
 
 ### Live URL
 
-`[Add the deployed application URL after deployment and verification]`
+(https://gd-arena-s6qb.onrender.com/)
 
 ## Tools and AI used
 
