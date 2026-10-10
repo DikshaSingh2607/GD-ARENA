@@ -3,6 +3,7 @@ What it does
 GD Arena (Problem Statement #2) is a voice-first web app for practising campus-placement Group Discussions with AI participants and a moderator. Students choose a topic, language, format, and duration, then speak or type while a turn-managed discussion unfolds. After the GD and closing round finish, the app presents transcript-linked feedback, performance metrics, and practice suggestions.
 
 Done / Left / Plan
+
 Done
 •	Shipped the setup, live discussion room, AI moderator and participants, typed fallback, transcript, and post-session report.
 •	Added English and Hinglish settings, Standard and Fishbowl formats, 5/8/10-minute sessions, adjustable captions and speech controls, and topic selection/custom topics.
