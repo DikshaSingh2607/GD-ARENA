@@ -1,219 +1,250 @@
-GD Arena
-Voice-first AI-powered Group Discussion practice for campus
-placements.
-Live app: https://gdarena-bzwhpycy.manus.space
-GD Arena helps students and early-career job seekers practise
-campus-placement Group Discussions (GDs) in a low-pressure environment.
-Choose a topic, language, format, and session duration, then speak or
-type while AI participants and an AI moderator guide the discussion.
-After the discussion and closing round, review transcript-linked
-feedback, performance metrics, and suggestions for improvement.
-Practice-only disclosure: All other participants and the moderator
-are AI. Only you are human. The Recruiter Panel Verdict is simulated
-practice feedback, not a real hiring prediction.
+::: {align="center"}
+# 🎙️ GD Arena
 
-Features
-GD practice room
-- Voice-first discussions with a typed-reply fallback.
-- AI moderator and multiple AI participants, with turn management to
-  reduce overlapping speech.
-- Preset topics and custom topics.
-- English and Hinglish language settings.
-- Standard and Fishbowl discussion formats.
-- Session durations of 5, 8, or 10 minutes.
-- Live transcript, adjustable captions, and speech controls.
-- A closing round to practise summarising and finishing confidently.
-Feedback and practice tools
-- Transcript-linked report: Review feedback supported by
-  discussion evidence.
-- Performance metrics: See indicators of discussion performance
-  and areas to improve.
-- Recruiter Panel Verdict: A simulated, practice-oriented verdict.
-- Pressure Dial: Adjust the intensity of the practice session.
-- Live GD Pulse: Get in-session cues about the discussion.
-- Topic Primer: Optionally review a brief topic introduction
-  before starting.
-- Retry the Moment: Rehearse a missed opening or discussion
-  moment.
-- Local progress history: Review previous sessions saved on the
-  same device.
-Voice interaction
-- Tap the microphone to start speaking and tap again to finish.
-- Hold Space for push-to-talk.
-- Natural pauses do not automatically submit a turn.
-- After you finish speaking, the app briefly waits for final
-  browser-recognised words before the AI continues.
-- AI lines can be spoken using the browser's speech synthesis where
-  supported.
-Speech recognition quality and available voices depend on the browser,
-microphone, and device.
-How it works
-1. Open GD Arena and select a topic or enter a custom topic.
-2. Choose English or Hinglish, Standard or Fishbowl format, and a 5-,
-   8-, or 10-minute session.
-3. Optionally read the Topic Primer and adjust practice pressure and
-   speech settings.
-4. Join the discussion. Speak using the microphone controls or type
+### AI-Powered Group Discussion Practice for Campus Placements
+
+**Practise speaking. Build confidence. Get placement-ready.**
+
+[🚀 Open Live App](https://gdarena-bzwhpycy.manus.space)
+:::📌 About the Project
+GD Arena is a voice-first web application that helps students and
+early-career job seekers practise campus-placement Group Discussions
+(GDs) with AI participants and an AI moderator.
+Choose a topic, language, discussion format, and session duration. Then
+speak or type your responses while the AI-led discussion unfolds. After
+the session, review your transcript, performance metrics,
+evidence-linked feedback, and suggestions for improvement.
+Transparency: All other participants and the moderator are AI.
+Only you are human. The Recruiter Panel Verdict is simulated practice
+feedback, not a real hiring prediction.
+
+✨ Key Features
+<table>
+<tr>
+<td width="50%" valign="top">
+🗣️ Realistic GD Practice
+- Voice-first discussion with typed fallback
+- AI moderator and multiple AI participants
+- Turn management to reduce overlapping speech
+- Preset and custom topics
+- Standard and Fishbowl formats
+- English and Hinglish
+- 5-, 8-, and 10-minute sessions
+</td>
+<td width="50%" valign="top">
+📊 Feedback & Improvement
+- Transcript-linked performance report
+- Performance metrics and improvement suggestions
+- Simulated Recruiter Panel Verdict
+- Live GD Pulse for in-session cues
+- Pressure Dial to adjust practice intensity
+- Optional Topic Primer before a session
+- Retry the Moment to practise again
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+🎧 Voice Controls
+- Tap the microphone to start and stop
+- Hold Space for push-to-talk
+- Natural pauses do not automatically submit a turn
+- Brief wait for final browser-recognised words
+- AI voice output through browser speech synthesis
+</td>
+<td width="50%" valign="top">
+📈 Progress Tracking
+- Local session history
+- Saved preferences and transcripts
+- Review past practice sessions
+- Identify recurring strengths and improvement areas
+- No sign-in required
+</td>
+</tr>
+</table>
+🔄 How It Works
+1. Choose your setup --- Select a preset or custom topic, language,
+   format, and duration.
+2. Prepare --- Optionally read the Topic Primer and adjust the
+   Pressure Dial.
+3. Join the discussion --- Speak through your microphone or type
    your response.
-5. Participate in the discussion and closing round.
-6. Review the transcript, feedback, performance metrics, and suggested
-   next steps.
-7. Return later to practise another topic and review local session
-   history.
-Technology stack
-  Layer                   Technology              Purpose
-  Frontend                React 18, TypeScript,   Responsive setup,
-                          Vite, Tailwind CSS      discussion room,
-                                                  transcript, and report
-                                                  interface
-  Backend                 Node.js, Express 5      Server endpoint for AI
-                                                  requests
+4. Interact with AI --- Practise entering the discussion,
+   supporting ideas, and responding to others.
+5. Complete the closing round --- Practise summarising your key
+   points.
+6. Review your report --- Read your transcript, feedback,
+   performance metrics, and improvement suggestions.
+7. Practise again --- Retry a moment, choose another topic, and
+   review your local history.
+🧰 Tech Stack
+  Layer                   Technology              Role
+  Frontend                React 18, TypeScript,   User interface and
+                          Vite                    application logic
+  Styling                 Tailwind CSS            Responsive layouts and
+                                                  styling
+  Backend                 Node.js, Express 5      Server-side API
+                                                  endpoint
   AI                      Platform-provided LLM   Topic packs, live
-                          service                 participant turns, and
-                                                  structured report
+                          service                 discussion, and report
                                                   analysis
-  Voice input             Browser Web Speech API  Converts supported
-                          (SpeechRecognition)   browser speech input
-                                                  into text
-  Voice output            Browser                 Speaks AI participant
-                          speechSynthesis       and moderator lines
+  AI models               gpt-5-nano,           Discussion generation
+                          gpt-5-mini            and structured feedback
+  Speech input            Web Speech API          Browser-based speech
+                          (SpeechRecognition)   recognition
+  Speech output           speechSynthesis       AI participant and
+                                                  moderator voice
   Icons                   Lucide React            Interface icons
-  Local persistence       Browser localStorage  Stores preferences and
-                                                  session history on the
-                                                  current device
-  Development scripts     concurrently and pnpm Runs and manages
-                                              development tasks
-Architecture
+  Local storage           Browser localStorage  Preferences and session
+                                                  history
+  Tooling                 pnpm, concurrently      Dependency management
+                                              and development scripts
+🏗️ Architecture
+┌──────────────────────────────────────┐
+│          React + TypeScript          │
+│   Setup · Live GD Room · Transcript  │
+│             · Report                 │
+└──────────────────┬───────────────────┘
+                   │
+                   ▼
+┌──────────────────────────────────────┐
+│        Node.js + Express 5           │
+│             POST /api/llm            │
+│  Server-side credentials · Timeout  │
+│       Queue · Fallback handling      │
+└──────────────────┬───────────────────┘
+                   │
+                   ▼
+┌──────────────────────────────────────┐
+│       Platform-provided LLM API      │
+│  gpt-5-nano: topics and live turns    │
+│  gpt-5-mini: structured report       │
+└──────────────────────────────────────┘
+
+Browser APIs: SpeechRecognition + speechSynthesis
+Local data:   localStorage
 Frontend
-The React and TypeScript frontend is built with Vite and styled using
-Tailwind CSS. It manages setup options, the live room, captions,
-transcript, and post-session report.
-Backend and AI requests
-The Node.js and Express server exposes a same-origin POST /api/llm
-endpoint. This proxy keeps AI service credentials on the server instead
-of exposing them in browser code. Requests are queued and bounded by a
-timeout. If the AI service is unavailable or a request times out, the
-app can use prepared topic-bank or local fallback content to keep a
-practice session moving.
-Models and structured output
-The platform-provided LLM service uses: - gpt-5-nano for topic
-packs and live discussion turns. - gpt-5-mini for structured
-report judgments and feedback.
-Structured JSON responses help the application validate generated
-content and connect report feedback to transcript evidence. Discussion
-content does not use web-search tools.
-Voice and turn management
-The app uses browser speech recognition for voice input where supported
-and browser speech synthesis for AI voice output. Turns are serialised
-to reduce overlapping speakers. Typed replies remain available when
-speech input is unavailable or unsuitable.
-Data storage
-Preferences, transcripts, and session history are saved in browser
-localStorage. There is no account or database requirement for normal
-practice sessions, and the saved history is local to the browser/device.
-Development status
-Completed
-- Setup flow, live discussion room, AI moderator and participants,
-  typed fallback, transcript, and post-session report.
-- English and Hinglish settings; Standard and Fishbowl formats; 5-,
-  8-, and 10-minute sessions.
-- Adjustable captions and speech controls, preset topic selection, and
-  custom topics.
-- Recruiter Panel Verdict, Pressure Dial, live GD Pulse, optional
-  Topic Primer, Retry the Moment, and local progress history.
-- Tap-to-toggle microphone interaction and Spacebar push-to-talk.
-- Improved handling of natural pauses and a short wait for final
-  browser-recognised words before AI continuation.
-- Server-side LLM proxy and topic-bank/local fallbacks.
-- TypeScript checks and production build pass.
-Remaining validation and improvement work
-- Test long spoken turns with natural pauses in desktop Chrome and
-  verify that the full statement appears in the transcript.
-- Investigate AI request timeouts and improve latency or fallback
-  handoff while preserving topic relevance.
-- Run end-to-end tests for preset and custom topics, Fishbowl
-  sessions, interruptions, the closing round, and quote-linked report
-  evidence.
-- Compare report scoring and transcript metrics against sample
-  sessions and correct inaccuracies.
-- Complete responsive-layout and keyboard-accessibility checks, fix
-  issues found during testing, and publish a verified update.
-Planned testing schedule
-1. Hours 0--4: Test tap-to-toggle and Spacebar capture with long
-   turns, natural pauses, and interruption recovery in desktop Chrome;
-   inspect transcripts.
-2. Hours 4--8: Profile LLM timeouts and refine latency or fallback
-   handoff without weakening on-topic checks.
-3. Hours 8--12: Test UPI, work-from-home, custom-topic, and
-   Fishbowl sessions through the closing round; verify report quotes,
-   IDs, and computed metrics.
-4. Hours 12--16: Complete responsive and keyboard-accessibility
-   checks, fix issues found during testing, and publish the verified
-   update.
-Run locally
-Requirements
-- Node.js 22 or later
-- pnpm 11.25.0
-Install dependencies
-From the project root:
+React, TypeScript, Vite, and Tailwind CSS power the setup flow, live
+room, captions, transcript, and post-session report.
+Backend and AI
+The Express server provides a same-origin POST /api/llm endpoint. AI
+credentials remain on the server rather than being exposed in browser
+code. Requests are queued and limited by a timeout; prepared topic-bank
+or local fallback content can keep a session moving if the AI service is
+unavailable.
+AI response generation
+- gpt-5-nano prepares topic packs and live participant
+  responses.
+- gpt-5-mini generates structured report judgments and feedback.
+Structured JSON helps the app validate responses and link feedback to
+transcript evidence. Discussion content does not use web-search tools.
+Voice and data
+The app uses browser speech recognition for input and browser speech
+synthesis for AI voice output, where supported. Turns are serialised to
+reduce overlapping speech. Preferences, transcripts, and session history
+are stored in browser localStorage, so there is no account or database
+requirement for normal practice sessions.
+🚀 Run Locally
+Prerequisites
+- Node.js: 22 or later
+- pnpm: 11.25.0
+1. Clone the repository
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd <YOUR_PROJECT_DIRECTORY>
+Replace the placeholders with your actual repository URL and project
+directory.
+2. Install dependencies
 pnpm install
-Start development servers
+3. Start the development servers
 pnpm dev
-Open http://localhost:3000.
-During development, Vite serves the frontend on port 3000, Express
-serves the API on port 3001, and /api requests are proxied to the
+Open http://localhost:3000 in your browser.
+During development: - Vite serves the frontend on port 3000. - Express
+serves the API on port 3001. - /api requests are proxied to the
 backend.
-Configure AI access
-For live AI responses locally, provide the server process with either: -
-BUILT_IN_FORGE_API_URL and BUILT_IN_FORGE_API_KEY, or -
-MANUS_API_URL and MANUS_API_KEY.
-Configure these as server-side environment variables. Never commit
-credentials, put secrets in source control, or expose them through
-client-side environment variables. Without the LLM service, the room can
-use prepared or local fallback lines.
-Useful commands
-pnpm check   # Run TypeScript and server syntax checks
-pnpm build   # Type-check and build the production frontend into dist/
-Deployment
-The current live deployment is available at:
-https://gdarena-bzwhpycy.manus.space
-The project is configured as a Node.js/Express application with a React
-frontend. The repository includes a root-level Dockerfile for
-container-based deployment. Keep server credentials configured in the
-deployment environment rather than in the repository or client bundle.
-Privacy and limitations
+4. Configure AI access
+For live AI responses locally, provide the server process with one
+of these environment-variable pairs:
+- BUILT_IN_FORGE_API_URL and BUILT_IN_FORGE_API_KEY
+- MANUS_API_URL and MANUS_API_KEY
+Keep credentials in server-side environment variables. Never commit
+API keys or expose secrets through client-side variables. Without the
+LLM service, prepared or local fallback responses may still be
+available.
+5. Useful commands
+pnpm check   # TypeScript and server syntax checks
+pnpm build   # Type-check and build the frontend into dist/
+🌐 Live Deployment
+Try GD Arena: https://gdarena-bzwhpycy.manus.space
+No test login is required. Open the application and enter the setup
+screen.
+The project uses a React frontend with a Node.js/Express backend and
+includes a root-level Dockerfile for container-based deployment.
+Configure server credentials through your hosting platform's environment
+settings.
+✅ Development Status
+Implemented
+- [x] Setup flow, live discussion room, AI moderator, and AI
+  participants
+- [x] Typed fallback, transcript, and post-session report
+- [x] English/Hinglish, Standard/Fishbowl, and 5/8/10-minute options
+- [x] Preset and custom topics, captions, and speech controls
+- [x] Pressure Dial, live GD Pulse, Topic Primer, and Retry the Moment
+- [x] Simulated Recruiter Panel Verdict and local session history
+- [x] Tap-to-toggle microphone and Spacebar push-to-talk
+- [x] Natural-pause handling and final transcript collection window
+- [x] Server-side LLM proxy and fallback responses
+- [x] TypeScript checks and production build passing
+Next priorities
+- [ ] Verify long spoken turns and complete transcripts in desktop
+  Chrome
+- [ ] Investigate AI request timeouts and improve fallback handoff
+- [ ] Test preset/custom topics, Fishbowl, interruptions, and closing
+  rounds
+- [ ] Validate report quotes, evidence IDs, scoring, and computed
+  metrics
+- [ ] Complete responsive and keyboard-accessibility checks
+Planned 16-hour testing schedule
+  Time                                Focus
+  Hours 0--4                          Test microphone controls, long
+                                      turns, natural pauses, and
+                                      interruption recovery
+  Hours 4--8                          Investigate AI timeouts and improve
+                                      latency and fallback behaviour
+  Hours 8--12                         Run UPI, work-from-home,
+                                      custom-topic, and Fishbowl
+                                      sessions; validate reports
+  Hours 12--16                        Check responsiveness and keyboard
+                                      accessibility, fix issues, and
+                                  publish a verified update
+🔐 Privacy & Limitations
 - GD Arena does not save microphone recordings.
 - Browser speech-recognition processing follows the browser provider's
   own service and privacy terms.
 - Transcript text is sent to the configured LLM service for live
   replies and report analysis.
-- Speech-recognition support and available voices vary by browser and
-  device.
-- AI-generated responses and report scores may be imperfect. Treat
-  them as practice guidance, not authoritative evaluation or a hiring
-  decision.
+- Speech-recognition quality and available voices vary by browser,
+  microphone, and device.
+- AI responses and scores may be imperfect. Use them as practice
+  guidance, not as an authoritative evaluation or hiring decision.
 - Preferences and session history are stored locally in the browser
   and are not synchronised across devices by the app.
-Intended users
+🎯 Who Is It For?
 GD Arena is designed for students and early-career job seekers preparing
-for campus placements. It helps users practise: - Speaking clearly and
-confidently. - Entering a discussion at an appropriate moment. -
-Supporting ideas with reasons and examples. - Responding to other
-participants. - Managing interruptions and discussion pressure. -
-Summarising and closing a discussion confidently.
+for campus placements. It helps users practise:
+- Speaking clearly and confidently
+- Entering a discussion at the right moment
+- Supporting ideas with reasons and examples
+- Responding constructively to other participants
+- Handling interruptions and discussion pressure
+- Summarising and closing a discussion confidently
 It is especially useful for learners who do not have a group available
-for repeated practice or who want a low-pressure space to rehearse.
-Libraries and tools
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- Node.js
-- Express 5
-- Lucide React
-- concurrently
-- pnpm
-- Browser Web Speech API (SpeechRecognition and speechSynthesis)
-- Platform-provided LLM API (gpt-5-nano and gpt-5-mini)
-GD Arena --- practise your ideas, improve your voice, and enter your
-next Group Discussion with more confidence.
+for repeated practice or prefer a low-pressure environment to rehearse.
+🧩 Libraries & Tools
+React · TypeScript · Vite · Tailwind CSS · Node.js ·
+Express 5 · Lucide React · concurrently · pnpm ·
+Web Speech API · Platform-provided LLM API
+::: {align="center"}
+**🎙️ Practise your ideas. Improve your voice. Enter your next GD with
+confidence.**
+
+[Open GD Arena](https://gdarena-bzwhpycy.manus.space)
+:::
